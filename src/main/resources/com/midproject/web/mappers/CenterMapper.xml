@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.midproject.web.mappers.CenterMapper">
+    <select id="selectAll" resultType="com.midproject.web.domains.CenterDTO">
+        select
+            center_id centerId,
+            business_id businessId,
+            place_id placeId,
+            application_date applicationDate,
+            team_id teamId,
+            pupose,
+            users_num usersNum,
+            start_date startDate,
+            end_date endDate,
+            perform_status performStatus,
+            price,
+            reservation_date reservationDate,
+            write_date writeDate,
+            update_date updateDate,
+            offline_status offlineStatus
+        from center
+    </select>
+</mapper>
