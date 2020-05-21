@@ -16,9 +16,9 @@
             <slot name="footer" :footer="footer"></slot>
         </footer>
     </div>
-</template>
+</template >
 
-<script>
+<script >
     export default {
         name: "Layout",
         data(){
